@@ -1,0 +1,54 @@
+@import "../abstracts/variables";
+
+.nav {
+    background-color: $color-primary;
+    color: #000;
+    margin-top: 20px;
+    padding: 20px 0;
+
+    .nav-list {
+        position: relative;
+
+        li {
+            padding: 10px 0;
+            display: inline-block;
+            margin-right: 15px;
+
+            a {
+                color: $color-white;
+                text-transform: uppercase;
+                position: relative;
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: -3px;
+                    height: 2px;
+                    width: 0;
+                    background-color: yellow;
+                    transition: 0.5s;
+                }
+
+                &::before {
+                    content: '';
+                    position: absolute;
+                    right: 0;
+                    top: -3px;
+                    height: 2px;
+                    width: 0;
+                    background-color: yellow;
+                    transition: 0.5s;
+                }
+
+                &:hover::after {
+                    width: 100%;
+                }
+
+                &:hover::before {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

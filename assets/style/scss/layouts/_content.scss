@@ -1,0 +1,51 @@
+@import "../abstracts/variables";
+
+.content {
+
+    position: relative;
+
+    img {
+        width: 100%;
+        margin-top: 30px;
+    }
+
+    .left-icon {
+
+        position: absolute;
+        top: 45%;
+        left: 0;
+
+        img {
+            display: block;
+            position: relative;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .right-icon {
+
+        position: absolute;
+        top: 45%;
+        right: 0;
+
+        img {
+            position: relative;
+            width: 100%;
+            cursor: pointer;
+        }
+    }
+
+    .circle {
+        display: flex;
+        justify-content: center;
+
+        span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $color-circle;
+            margin: 5px 3px;
+        }
+    }
+}

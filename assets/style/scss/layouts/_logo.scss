@@ -1,0 +1,32 @@
+@import "../abstracts/variables";
+
+#logo {
+    background-color: $search-color;
+
+    .logo {
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin: 40px 0;
+        flex-wrap: wrap;
+
+        img {
+            width: 10%;
+            height: auto;
+        }
+
+    }
+
+    .circle {
+        display: flex;
+        justify-content: center;
+
+        span {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: $color-circle;
+            margin: 5px 3px;
+        }
+    }
+}
