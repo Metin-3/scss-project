@@ -254,6 +254,11 @@ ul {
 #header {
   font-family: sans-serif;
 }
+@media (max-width: 576px) {
+  #header {
+    display: none;
+  }
+}
 
 .header-top__logo {
   display: flex;
@@ -335,7 +340,7 @@ ul {
 
 .nav {
   background-color: #1D2123;
-  color: #000;
+  color: #1D2123;
   margin-top: 20px;
   padding: 20px 0;
 }
@@ -377,6 +382,98 @@ ul {
 }
 .nav .nav-list li a:hover::before {
   width: 100%;
+}
+
+#header-mobil {
+  display: none;
+  background-color: #1D2123;
+}
+@media (max-width: 576px) {
+  #header-mobil {
+    display: block;
+  }
+}
+#header-mobil img {
+  margin: 20px 10px;
+}
+#header-mobil nav {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+}
+#header-mobil nav div button {
+  background-color: #1D2123;
+  border: none;
+}
+#header-mobil nav div button:focus + .mobil-nav {
+  display: block;
+}
+#header-mobil nav div .mobil-nav {
+  display: none;
+  background-color: #fff;
+  color: #1D2123;
+  width: 60%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: 0.6s;
+}
+#header-mobil nav div .mobil-nav .mobil-list li a {
+  color: #1D2123;
+  text-transform: uppercase;
+  line-height: 35px;
+  padding-left: 20px;
+}
+#header-mobil nav div .mobil-nav .language {
+  display: flex;
+  justify-content: space-around;
+}
+#header-mobil nav div .mobil-nav .language span {
+  display: block;
+}
+#header-mobil nav div .mobil-nav .language span a {
+  color: #1D2123;
+  line-height: 40px;
+  font-family: sans-serif;
+}
+#header-mobil nav div .mobil-nav .mobil-button {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+#header-mobil nav div .mobil-nav .mobil-button button {
+  padding: 15px;
+  background-color: #1D2123;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+}
+#header-mobil nav .mobil-icon {
+  display: flex;
+  justify-content: space-around;
+}
+#header-mobil .mobil-search {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+#header-mobil .mobil-search div {
+  background-color: #fff;
+  border-bottom-left-radius: 8px;
+  border-top-left-radius: 8px;
+  border-bottom: 2.5px solid #1D2123;
+}
+#header-mobil .mobil-search input {
+  padding: 10px;
+  width: 60%;
+  margin-bottom: 2px;
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
+  border: 2px solid #fff;
+  outline: none;
 }
 
 .content {
